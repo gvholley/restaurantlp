@@ -28,22 +28,23 @@
   <body class="<%= page_classes %>">
     <header>
       <div class="container">
+        <nav class="pre-nav">
         <a href="#" class="logo">
           <i class="fas fa-utensils"></i>
           Restaurant
         </a>
-        <a href="#">Call us on 08 044 8888</a>
-        </div>
-      </div>
-      <nav>
+        <a href="#">Call us: 08 044 8888</a>
+        </nav>
+        <nav>
         <ul>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#" class="active">About Us</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Contact Us</a></li>
-          <li><a href="#" class="active"></a>Book a Table</li>
+          <li><a href="#" class="highlight">Book a Table</a></li>
         </ul>
-      </nav>
+        </nav>
     </header>
+    </div>
     <%= yield %>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -10,3 +10,134 @@
 @import "components/index";
 @import "pages/index";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  margin: 0;
+  background-image: url("/images/pizzabg.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+  background-position: center center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.pre-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  padding: 0.5em 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav li a {
+  background-color: #AF3E4D;
+  padding: 1em 2em;
+  display: block;
+  text-align: center;
+}
+
+nav a.active {
+  color: #AF3E4D;
+  background-color: white;
+  &:hover {
+    color: #AF3E4D;
+    text-decoration: none;
+  }
+}
+
+nav a.highlight {
+  background-color: #AF3E4D;
+  color: white;
+}
+
+nav a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3em;
+  margin-left: 6em;
+}
+
+.content h1 {
+  background-color: #AF3E4D;
+  color: white;
+  display: inline-block;
+  padding: 1em;
+}
+
+.white-link {
+  background-color: white;
+  color: #AF3E4D;
+  padding: 1em;
+  &:hover {
+    text-decoration: none;
+    color: #AF3E4D;
+  }
+}
+
+.teal-link {
+  color: white;
+  background-color: #AF3E4D;
+  margin-top: 1em;
+  padding: 1em;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pre-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .content {
+    font-size: 1.5em;
+
+  }
+
+}
